@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <th style="text-align:center;">S.No.</th>
+                <th style="text-align:center;">Property &amp; Description</th>
+            </tr>
+            <tr>
+                <td class="ts">1.</td>
+                <td><a href="/typescript/typescript_string_constructor.htm">Constructor</a>
+                    <p>Returns a reference to the String function that created the object.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">2.</td>
+                <td><a href="/typescript/typescript_string_length.htm">Length</a>
+                    <p>Returns the length of the string.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">3.</td>
+                <td><a href="/typescript/typescript_object_prototype.htm">Prototype</a>
+                    <p>The prototype property allows you to add properties and methods to an object.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <th style="text-align:center;">S.No.</th>
+                <th style="text-align:center;">Method &amp; Description</th>
+            </tr>
+            <tr>
+                <td class="ts">1.</td>
+                <td><a href="/typescript/typescript_string_charat.htm">charAt()</a>
+                    <p>Returns the character at the specified index.</p>
+                    <p>var str = new String("This is string"); <br>
+                        console.log("str.charAt(0) is:" + str.charAt(0)); </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">2.</td>
+                <td><a href="/typescript/typescript_string_charcodeat.htm">charCodeAt()</a>
+                    <p>Returns a number indicating the Unicode value of the character at the given index.</p>
+                    <p>
+                        var str = new String("This is string");<br>
+                        console.log("str.charAt(0) is:" + str.charCodeAt(0));
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">3.</td>
+                <td><a href="/typescript/typescript_string_concat.htm">concat()</a>
+                    <p>Combines the text of two strings and returns a new string.</p>
+                    <p> var str1 = new String( "This is string one" ); </p>
+                    <p> var str2 = new String( "This is string two" ); </p>
+                    <p> var str3 = str1.concat(str2.toString());</p>
+                    <p> console.log("str1 + str2 : "+str3)</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">4.</td>
+                <td><a href="/typescript/typescript_string_indexof.htm">indexOf()</a>
+                    <p>Returns the index within the calling String object of the first occurrence of the specified
+                       value, or -1 if not found.</p>
+                        <p> var str1 = new String( "This is string one" ); </p>
+ 
+                        <p> var index = str1.indexOf( "string" ); </p>
+                        <p> console.log("indexOf found String :" + index );   </p>
+
+                        <p> var index = str1.indexOf( "one" ); </p>
+                        <p> console.log("indexOf found String :" + index );</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">5.</td>
+                <td><a href="/typescript/typescript_string_lastindexof.htm">lastIndexOf()</a>
+                    <p>Returns the index within the calling String object of the last occurrence of the specified value,
+                        or -1 if not found.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">6.</td>
+                <td><a href="/typescript/typescript_string_localecompare.htm">localeCompare()</a>
+                    <p>Returns a number indicating whether a reference string comes before or after or is the same as
+                        the given string in sort order.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">7.</td>
+                <td>
+                    <p><b>match()</b></p>
+                    <p>Used to match a regular expression against a string.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">8.</td>
+                <td><a href="/typescript/typescript_string_replace.htm">replace()</a>
+                    <p>Used to find a match between a regular expression and a string, and to replace the matched
+                        substring with a new substring.</p>
+                        <p>string.replace(regexp/substr, newSubStr/function[, flags]);
+                        </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">9.</td>
+                <td><a href="/typescript/typescript_string_search.htm">search()</a>
+                    <p>Executes the search for a match between a regular expression and a specified string.</p>
+                    <p> var re = /apples/gi; </p>
+                    <p> var str = "Apples are round, and apples are juicy.";</p>
+                    <p> if (str.search(re) == -1 ) { </p>
+                    <p> console.log("Does not contain Apples" ); </p>
+                    <p> } else { </p>
+                    <p> console.log("Contains Apples" ); </p>
+                    <p> } </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">10.</td>
+                <td><a href="/typescript/typescript_string_slice.htm">slice()</a>
+                    <p>Extracts a section of a string and returns a new string.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">11.</td>
+                <td><a href="/typescript/typescript_string_split.htm">split()</a>
+                    <p>Splits a String object into an array of strings by separating the string into substrings.</p>
+                    <p> var str = "Apples are round, and apples are juicy."; </p>
+                    <p> var splitted = str.split(" ", 3); </p>
+                    <p> console.log(splitted)</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">12.</td>
+                <td><a href="/typescript/typescript_string_substr.htm">substr()</a>
+                    <p></p>
+                    <p>Returns the characters in a string beginning at the specified location through the specified
+                        number of characters.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">13.</td>
+                <td><a href="/typescript/typescript_string_substring.htm">substring()</a>
+                    <p>Returns the characters in a string between two indexes into the string.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">14.</td>
+                <td><a href="/typescript/typescript_string_tolocalelowercase.htm">toLocaleLowerCase()</a>
+                    <p>The characters within a string are converted to lower case while respecting the current locale.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">15.</td>
+                <td><a href="/typescript/typescript_string_tolocaleuppercase.htm">toLocaleUpperCase()</a>
+                    <p>The characters within a string are converted to upper case while respecting the current locale.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">16.</td>
+                <td><a href="/typescript/typescript_string_tolowercase.htm">toLowerCase()</a>
+                    <p>Returns the calling string value converted to lower case.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">17.</td>
+                <td><a href="/typescript/typescript_string_tostring.htm">toString()</a>
+                    <p>Returns a string representing the specified object.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">18.</td>
+                <td><a href="/typescript/typescript_string_touppercase.htm">toUpperCase()</a>
+                    <p>Returns the calling string value converted to uppercase.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ts">19.</td>
+                <td><a href="/typescript/typescript_string_valueof.htm">valueOf()</a>
+                    <p>Returns the primitive value of the specified object.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
