@@ -1,0 +1,12 @@
+
+
+
+<p>ifelsecomponent works!</p>
+
+<p>for if else we are able to get data from the TS file</p>
+<p>for display TS varaible data to the HTML file we have string interpolation concept with double curly brace we are able to get and print stirng data</p>
+<!-- {{ show }} -->
+<button (click)="show = !show" >Show/ Hide</button>
+<button (click)="show = !show" >{{show ? 'hide' : 'show'}}</button>
+<div *ngIf="show">Text to show</div>
+
