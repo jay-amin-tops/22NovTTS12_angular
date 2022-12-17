@@ -1,0 +1,28 @@
+<p>stringinterpo-prop-binding works!</p>
+
+{{name}}
+<input type="text" name="" id="">
+<h2>Property Binding</h2>
+<p>[class]="className"</p>
+<input type="text" [class]="className" name="" id="">
+<h2>String interpolation</h2>
+<p>&#123; &#123;className&#125;&#125;</p>
+<input type="text" class={{className}} name="" id="">
+<input type="text" class="className" name="" id="">
+
+
+<h2>EventEmitter</h2>
+
+
+<p> Use in components with the @Output directive to emit custom events synchronously or asynchronously, and register handlers for those events by subscribing to an instance.</p>
+<div [style.font-size.px]="fontSizePx">Resizable Text</div>
+
+
+<button type="button" (click)="dec()" title="smaller">-</button>
+<button type="button" (click)="inc()" title="bigger">+</button>
+<span [style.font-size.px]="size">FontSize: {{size}}px</span>
+
+<h2>Two Way Data Binding</h2>
+<input type="text" [(ngModel)]="username" name="" id=""> {{username}}
+<button (click)="opration()">Click</button>
+<h3>{{errorMsg}}</h3>

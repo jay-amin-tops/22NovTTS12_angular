@@ -5,6 +5,7 @@ import { BtnclickComponent } from './btnclick/btnclick.component';
 import { ContactComponentComponent } from './contact-component/contact-component.component';
 import { ExmaplesComponent } from './exmaples/exmaples.component';
 import { IfelsecomponentComponent } from './ifelsecomponent/ifelsecomponent.component';
+import { StringinterpoPropBindingComponent } from './stringinterpo-prop-binding/stringinterpo-prop-binding.component';
 
 const routes: Routes = [
   // { path: 'if-else', component: IfelsecomponentComponent },
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponentComponent },
   { path: 'example', component: ExmaplesComponent, children: [
     {path:'if-else', component: IfelsecomponentComponent},
-    {path:'btnclickfunction', component: BtnclickComponent}
+    {path:'btnclickfunction', component: BtnclickComponent},
+    {path:'stringinterpropbinding', component: StringinterpoPropBindingComponent},
 
   ]}
   // { path: 'example/if-else', component: IfelsecomponentComponent },

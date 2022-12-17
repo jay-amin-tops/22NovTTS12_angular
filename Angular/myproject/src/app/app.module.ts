@@ -11,6 +11,8 @@ import { AboutUsComponentComponent } from './about-us-component/about-us-compone
 import { ContactComponentComponent } from './contact-component/contact-component.component';
 import { ExmaplesComponent } from './exmaples/exmaples.component';
 import { BtnclickComponent } from './btnclick/btnclick.component';
+import { StringinterpoPropBindingComponent } from './stringinterpo-prop-binding/stringinterpo-prop-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { BtnclickComponent } from './btnclick/btnclick.component';
     AboutUsComponentComponent,
     ContactComponentComponent,
     ExmaplesComponent,
-    BtnclickComponent
+    BtnclickComponent,
+    StringinterpoPropBindingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbDropdownModule
+    NgbDropdownModule,
+    FormsModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
