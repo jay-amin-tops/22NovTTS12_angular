@@ -1,0 +1,89 @@
+<p>pipes works!</p>
+<table>
+    <thead>
+        <tr>
+            <th align="left">Pipes</th>
+            <th align="left">Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left"><a href="api/common/DatePipe"><code>DatePipe</code></a></td>
+            <td align="left">
+                Formats a date value according to locale rules.
+                <p>&#123; &#123; value_expression | date &#91; : format &#91; : timezone &#91; : locale ] ] ]&#125;
+                    &#125;</p>
+                <p><b>Date Without pipe :</b> {{todaydate}}</p>
+                <p><b>Date with pipe :</b> {{todaydate|date:'d/M/y'}}</p>
+                <p><b>Date with pipe :</b> {{todaydate | date:'shortTime'}}</p>
+            </td>
+        </tr>
+        <tr>
+            <td align="left"><a href="api/common/UpperCasePipe"><code>UpperCasePipe</code></a></td>
+            <td align="left">
+                Transforms text to all upper case.
+                <h3>Uppercase Pipe</h3>
+                <b>{{title | uppercase}}</b><br />
+
+            </td>
+        </tr>
+        <tr>
+            <td align="left"><a href="api/common/LowerCasePipe"><code>LowerCasePipe</code></a></td>
+            <td align="left">Transforms text to all lower case.
+
+                <h3>Lowercase Pipe</h3>
+                <b>{{title | lowercase}}</b>
+
+            </td>
+        </tr>
+        <tr>
+            <td align="left"><a href="api/common/CurrencyPipe"><code>CurrencyPipe</code></a></td>
+            <td align="left">Transforms a number to a currency string, formatted according to locale rules.
+
+                <h3>Currency Pipe</h3>
+                <b>{{6589.23 | currency:"USD"}}</b><br />
+                <b>{{6589.23 | currency:"USD":true}}</b> //Boolean true is used to get the sign of the currency.
+
+            </td>
+        </tr>
+        <tr>
+            <td align="left"><a href="api/common/DecimalPipe"><code>DecimalPipe</code></a></td>
+            <td align="left">Transforms a number into a string with a decimal point, formatted according to locale
+                rules.
+                <h1>Decimal Pipe</h1>
+                <b>{{ 454.78787814 | number: '3.4-4' }}</b> // 3 is for main integer, 4 -4 are for integers to be
+                displayed.
+            </td>
+        </tr>
+        <tr>
+            <td align="left"><a href="api/common/PercentPipe"><code>PercentPipe</code></a></td>
+            <td align="left">Transforms a number to a percentage string, formatted according to locale rules.
+                <h1>Percent Pipe</h1>
+                <b>{{00.54565 | percent}}</b>
+            </td>
+        </tr>
+        <tr>
+            <td align="left"><a href="api/common/PercentPipe"><code>Json Pipe</code></a></td>
+            <td align="left">
+                <b>{{ jsonval | json }}</b>
+            </td>
+        </tr>
+        <tr>
+            <td align="left"><a href="api/common/PercentPipe"><code>Slice Pipe</code></a></td>
+            <td align="left">
+                <p>here 2 and 6 refers to the start and the end index</p>
+                <b>{{months | slice:2:6}}</b>
+            </td>
+        </tr>
+        <tr>
+            <td align="left"><a href="api/common/PercentPipe"><code>Custom Compo</code></a></td>
+            <td align="left">
+                <h3>Custom Pipe</h3>
+                <b>Square root of 25 is: {{25 | sqrt}}</b>
+                <br />
+                <b>Square root of 729 is: {{729 | sqrt}}</b>
+            </td>
+        </tr>
+    </tbody>
+
+</table>

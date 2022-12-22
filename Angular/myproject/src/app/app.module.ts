@@ -13,6 +13,10 @@ import { ExmaplesComponent } from './exmaples/exmaples.component';
 import { BtnclickComponent } from './btnclick/btnclick.component';
 import { StringinterpoPropBindingComponent } from './stringinterpo-prop-binding/stringinterpo-prop-binding.component';
 import { FormsModule } from '@angular/forms';
+import { SwitchCaseComponent } from './switch-case/switch-case.component';
+import { DirectivesinAngComponent } from './directivesin-ang/directivesin-ang.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { SqrtPipe } from './sqrt';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { FormsModule } from '@angular/forms';
     ContactComponentComponent,
     ExmaplesComponent,
     BtnclickComponent,
-    StringinterpoPropBindingComponent
+    StringinterpoPropBindingComponent,
+    SwitchCaseComponent,
+    DirectivesinAngComponent,
+    PipesComponent,
+    SqrtPipe
   ],
   imports: [
     BrowserModule,

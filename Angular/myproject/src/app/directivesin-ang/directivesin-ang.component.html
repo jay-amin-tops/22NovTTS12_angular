@@ -1,0 +1,63 @@
+<p>directivesin-ang works!</p>
+
+<h2>What Are Directives in Angular?</h2>
+<p>
+    What Are Directives in Angular?What Is Meant By Directives in Angular?Types of Directives in AngularCreating Our Own
+    Attribute DirectivePassing Input to DirectivesView More
+</p>
+<p> Angular is the fourth (22.29%) most used web framework for front-end development using HTML and typescript
+    programming language. Built by Google in 2009, Angular is used for single-page applications (SPAs) that are lighter
+    and faster, HTML templates, and components-driven dynamic applications. Popular websites written in Angular are
+    Forbes, Microsoft Office Home, IBM, and Google Marketing Platform.</p>
+<p> Directives in Angular are a fundamental development concept. So, let's take a detailed look at them.</p>
+<p> In Angular, Directives are defined as classes that can add new behavior to the elements in the template or modify
+    existing behavior.</p>
+<p> The purpose of Directives in Angular is to maneuver the DOM, be it by adding new elements to DOM or removing
+    elements and even changing the appearance of the DOM elements.</p>
+<h2>Types of Directives in Angular</h2>
+
+<p>Directive in angular can be categorized into the following types: Component Directive, Structural Directive, and
+    Attribute directive.</p>
+<p>Let's consider each of these Angular Directive types separately.</p>
+<ul>
+    <li>
+        <h3>Component Directive</h3>
+        <p>Special directives in Angular are called Components since this type of directive has a template or template
+            URLs. In effect, it is a component directive that shows something in DOM.</p>
+            <ul>
+                <li> selector: 'app-directivesin-ang',</li>
+                <li>templateUrl: './directivesin-ang.component.html',</li>
+                <li>styleUrls: ['./directivesin-ang.component.css']</li>
+            </ul>
+    </li>
+    <li>
+        <h3>Structural Directive</h3>
+        <p>This type of directive is used to make changes in the layout of the DOM. Elements can be added or removed,
+            hence changing the structure of the DOM. An example would be *ngIf(adding or removing element from DOM) or
+            *ngFor(lists elements of every iteration).</p>
+            
+        <!-- <button (click)="show = !show" >Show/ Hide</button> -->
+        <button (click)="show = !show" >{{show ? 'hide' : 'show'}}</button>
+        <ng-container *ngIf="show">
+            <div *ngFor="let thing of stuff">
+
+                <span>{{thing.name}}</span>
+            </div>
+        </ng-container>
+    </li>
+    <li>
+        <h3>Attribute directive</h3>
+        <p>This type of angular directive is used to make behavior or element changes in the appearance and behavior of
+            an element. For example, ngStyle( applying styles) or ngClass(applying CSS classes).</p>
+            <div [style.background-color]="style1 ? 'red' : (style1 ? 'blue' : null)">
+                <button (click)="style1 = !style1" >{{style1 ? 'style1 applied' : 'style1 removed'}}</button>
+                Style one
+            </div>
+            <br>
+            <div [ngStyle]="{'background-color': style2 ? 'orange' : (style2 ? 'blue' : null) }">
+                <button (click)="style2 = !style2" >{{style2 ? 'style2 applied' : 'style2 removed'}}</button>
+                Style two</div>
+
+    </li>
+</ul>
+<p>Let's explore the attribute directive some more by making our own Attribute Directive.</p>
