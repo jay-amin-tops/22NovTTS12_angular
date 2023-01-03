@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="userdata">
+
+    </ul>
+    <script>
+        fetch("http://localhost/api/allusers").then((response => response.json())).then((res) => {
+            htmllist = ""
+            Object.entries(res.Data).map(element => {
+                htmllist += `<li>${element[1].username}</li>`;
+            });
+            document.getElementById("userdata").innerHTML = htmllist
+        })
+    </script>
+
+</body>
+
+</html>

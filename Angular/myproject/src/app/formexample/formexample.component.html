@@ -1,0 +1,84 @@
+<p>formexample works!</p>
+
+
+<h2>FORMS</h2>
+
+<p>In Angular, there are 2 approaches to handle user's input through forms:</p>
+<ul>
+    <li>Reactive forms</li>
+    <li>Template-driven forms</li>
+</ul>
+
+<h3>Reactive Forms</h3>
+<ul>
+    <li>Reactive forms are more robust</li>
+    <li>Reactive forms are more scalable, and testable</li>
+    <li>They are most preferred to use if forms are a key part of your application, or your application is already built
+        using reactive patterns. In both cases, reactive forms are best to use.
+    </li>
+</ul>
+
+<h3>Template-driven Forms</h3>
+<ul>
+    <li>Template-driven forms are best if you want to add a simple form to your application. For example: email list
+        signup form.</li>
+    <li>Template-driven forms are easy to use in the application but they are not as scalable as Reactive forms.</li>
+    <li> Template-driven forms are mainly used if your application's requires a very basic form and logic. It can easily
+        be managed in a template.</li>
+</ul>
+
+<div class="row my-5">
+    <div class="col">
+        <table class="table table-bordered">
+            <thead class="bg-dark text-light">
+                <tr>
+                    <th>Comparison Index</th>
+                    <th>Reactive Forms</th>
+                    <th>Template-driven Forms</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Setup (form model)</td>
+                    <td>Reactive forms are more explicit. They are created in component class.</td>
+                    <td>Template-driven forms are less explicit. They are created by directives.</td>
+                </tr>
+                <tr>
+                    <td>Data model</td>
+                    <td>Structured	</td>
+                    <td>Unstructured</td>
+                </tr>
+                <tr>
+                    <td>Predictability</td>
+                    <td>Synchronous</td>
+                    <td>Asynchronous</td>
+                </tr>
+                <tr>
+                    <td>Form validation	</td>
+                    <td>Functions</td>
+                    <td>Directives</td>
+                </tr>
+                <tr>
+                    <td>Mutability</td>
+                    <td>immutable</td>
+                    <td>Mutable</td>
+                </tr>
+                <tr>
+                    <td>Scalability</td>
+                    <td>Low-level API access</td>
+                    <td>Abstraction on top of APIs</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<h3>Form model setup in Reactive forms START</h3>
+
+<input type="text" [formControl]="favoriteColorControl" name="uname" id="uname">{{ favoriteColorControl |json }}
+<h3>Form model setup in Reactive forms END</h3>
+<br>
+<h3>Form model setup in Template-driven Forms START</h3>
+Favorite Color: <input type="text" [(ngModel)]="favoriteColor"> 
+{{ favoriteColor }}
+<h3>Form model setup in Template-driven Forms END</h3>
